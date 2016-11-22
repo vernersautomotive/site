@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+    {% for post in site.categories.bro %}
+          {{ post.title }}
+          {{ post.content }}
+
+    {% endfor %}
+
+        {% for post in site.categories.chilling %}
+
+          {{ post.content }}
+
+    {% endfor %}
+
+
+
+
+</div>
