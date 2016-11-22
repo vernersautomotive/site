@@ -19,9 +19,19 @@
   <body>
 
 <header>
+Werner's
+Automotive Services
+Audi & VW Specialists
+Boulder CO
 
+    {% for post in site.categories.contact %}
+          {{ post.content }}
+
+    {% endfor %}
 
 </header>
+
+<img src="/assets/hero.jpg">
 
 
     <main class="page-content" aria-label="Content">
