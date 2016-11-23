@@ -11,9 +11,8 @@
 }
 
 .title-spacing {
-	font-size: 4.7em;
 	margin-bottom: 0;
-	line-height: .8
+	line-height: .8;
 }
 
 .margin-bottom-low, .margin-bottom-low p {
@@ -25,7 +24,7 @@
 }
 
 .margin-top-big {
-	margin-top: 2.35em;
+	margin-top: .7em;
 	margin-bottom: 0;
 }
 
@@ -33,3 +32,14 @@
 	margin-bottom: .4em;
 }
 
+.background-primary {
+	background-color: $primary-color;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.margin-negative {
+	margin: -.17em 0 0 -.07em;
+}
