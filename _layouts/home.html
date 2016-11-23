@@ -12,29 +12,54 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
   
 </head>
 
 
 <header>
-<h1 class="primary-color title-spacing"><span class="title-font">W</span>erner's</h1>
-<h4 class="primary-color subtitle-spacing"> Automotive Services</h4>
-<h5 class="secondary-color">Audi & Volkswagen Specialist</h5>
-Boulder CO
+  <div class="section group">
+    <div class="col span_8_of_12">
+      <h1 class="primary-color title-spacing">Verner's</h1>
+      <h4 class="primary-color margin-bottom-low"> Automotive Services</h4>
+      <h5 class="secondary-color margin-bottom-low">Audi & Volkswagen Specialist</h5>
+    </div>
 
-    {% for post in site.categories.contact %}
-          {{ post.content }}
+    <div class="col span_4_of_12">
+      <h6 class="secondary-color margin-top-big text-align-right">
+        <div class="margin-bottom-medium">
+          {% for post in site.categories.phone %}
+                {{ post.content }}
+          {% endfor %}
+        </div>
+        <div class="margin-bottom-medium">
+           {% for post in site.categories.email %}
+                {{ post.content }}
+          {% endfor %}
+        </div>
+        <div class="margin-bottom-low">
+           {% for post in site.categories.address %}
+                {{ post.content }}
+          {% endfor %}
+        </div>
+      </h6>
+    </div>
 
-    {% endfor %}
-
+        
+  </div>
 </header>
 
 <img class="hero" src="/assets/hero.jpg">
 
 <main>
 
-
+    <div class="section group">
+      <div class="col span_1_of_12"></div>
+      <div class="col span_10_of_12">
+          {% for post in site.categories.intro %}
+            {{ post.content }}
+          {% endfor %}
+      </div>
+    </div>
 
 
     {% for post in site.categories.bro %}
