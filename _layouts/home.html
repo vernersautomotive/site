@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
   
 </head>
 
@@ -19,9 +20,9 @@
   <body>
 
 <header>
-Werner's
-Automotive Services
-Audi & VW Specialists
+<h1 class="primary-color"><span class="title-font">W</span>erner's</h1>
+<h3 class="primary-color"> Automotive Services</h3>
+<h3 class="secondary-color">Audi & VW Specialist</h3>
 Boulder CO
 
     {% for post in site.categories.contact %}
