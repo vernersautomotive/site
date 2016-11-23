@@ -17,12 +17,10 @@
 </head>
 
 
-  <body>
-
 <header>
-<h1 class="primary-color"><span class="title-font">W</span>erner's</h1>
-<h3 class="primary-color"> Automotive Services</h3>
-<h3 class="secondary-color">Audi & VW Specialist</h3>
+<h1 class="primary-color title-spacing"><span class="title-font">W</span>erner's</h1>
+<h4 class="primary-color subtitle-spacing"> Automotive Services</h4>
+<h5 class="secondary-color">Audi & Volkswagen Specialist</h5>
 Boulder CO
 
     {% for post in site.categories.contact %}
@@ -32,11 +30,11 @@ Boulder CO
 
 </header>
 
-<img src="/assets/hero.jpg">
+<img class="hero" src="/assets/hero.jpg">
+
+<main>
 
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper"><div class="home">
 
 
     {% for post in site.categories.bro %}
@@ -53,12 +51,8 @@ Boulder CO
 
 
 
+</main>
 
-</div>
 
-      </div>
-    </main>
-
-  </body>
 
 </html>
