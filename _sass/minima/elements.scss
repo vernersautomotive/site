@@ -8,4 +8,8 @@ a {
 	color: inherit;
 }
 
+p {
+	font-family: $body-font;
+}
+
 @import "frameworks/typeplate"

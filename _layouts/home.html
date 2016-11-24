@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
-
+<!--header-->
 <header>
   <div class="center-width">
     <div class="section group">
@@ -27,17 +28,17 @@
         <h6 class="secondary-color margin-top-big text-align-right">
           <div class="margin-bottom-low">
             {% for post in site.categories.phone %}
-              {{ post.content }}
+              {{ post.content | remove: '<p>' | remove: '</p>'  }}
             {% endfor %}
           </div>
           <div class="margin-bottom-low">
             {% for post in site.categories.email %}
-              {{ post.content }}
+              {{ post.content | remove: '<p>' | remove: '</p>'  }}
             {% endfor %}
           </div>
           <div class="margin-bottom-low">
             {% for post in site.categories.address %}
-              {{ post.content }}
+              {{ post.content | remove: '<p>' | remove: '</p>'  }}
             {% endfor %}
           </div>
         </h6>
@@ -49,7 +50,8 @@
 
 
 <main>
-  <!--intro text section-->
+
+  <!--intro text section -->
   <div class="center-width">
     <div class="section group">
       <div class="col span_2_of_12"></div>
@@ -62,7 +64,7 @@
     </div>
   </div>
 
-  <!--reviews section-->
+  <!--reviews section -->
   <div class="center-width background-primary text-white">
     <div class="section group">
       <div class="col span_12_of_12">
@@ -104,7 +106,7 @@
     </div>
   </div>
 
-  <!-- secondary text section-->
+  <!-- secondary text section -->
   <div class="center-width">
     <div class="section group">
       <div class="col span_2_of_12"></div>
@@ -116,16 +118,16 @@
       <div class="col span_2_of_12"></div>
     </div>
     <div class="section group">
-      <div class="col span_2_of_12"></div>
-      <div class="col span_8_of_12">
+      <div class="col span_3_of_12"></div>
+      <div class="col span_6_of_12">
         <img class="img-100-percent" src="/assets/staff.jpg">
       </div>
-      <div class="col span_2_of_12"></div>
+      <div class="col span_3_of_12"></div>
     </div>
   </div>
 
-  <!-- environmentsl section-->
-    <div class="center-width background-primary text-white">
+  <!-- environmentsl section -->
+    <div class="center-width background-secondary text-white">
       <div class="section group">
         <div class="col span_2_of_12"></div>
         <div class="col span_1_of_12">
@@ -140,7 +142,7 @@
       </div>
     </div>
 
-  <!-- bio section-->
+  <!-- bio section -->
   <div class="center-width"> 
     <div class="section group">
       <div class="col span_4_of_12">
@@ -156,6 +158,7 @@
   </div>
 </main>
 
+<!-- footer -->
 <footer>
   <div class="center-width"> 
     <div class="section group">
