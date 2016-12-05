@@ -12,8 +12,11 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-</head>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
 
 <!--header-->
 <header>
@@ -41,6 +44,11 @@
               {{ post.content | remove: '<p>' | remove: '</p>'  }}
             {% endfor %}
           </div>
+          <div class="margin-bottom-low">
+            {% for post in site.categories.hours %}
+              {{ post.content | remove: '<p>' | remove: '</p>'  }}
+            {% endfor %}
+          </div>          
         </h6>
       </div>
     </div>
@@ -75,40 +83,40 @@
   <div class="center-width background-primary text-white">
     <div class="section group border-bottom-white padding-top-bottom">
       <div class="col span_3_of_12">
-        <img class="img-round img-margin-left" src="/assets/review1.jpg">
+        <img class="img-round img-margin-left" src="/assets/review-leslie.jpg">
       </div>
       <div class="col span_8_of_12 padding-sides">
-        {% for post in site.categories.review1 %}
+        {% for post in site.categories.review-leslie %}
           {{ post.content }}
         {% endfor %}
       </div>
     </div>
     <div class="section group border-bottom-white padding-top-bottom hide-desktop">
       <div class="col span_3_of_12">
-        <img class="img-round img-margin-left" src="/assets/review2.jpg">
+        <img class="img-round img-margin-left" src="/assets/review-daniel.jpg">
       </div>
       <div class="col span_8_of_12 padding-sides">
-        {% for post in site.categories.review2 %}
+        {% for post in site.categories.review-daniel %}
           {{ post.content }}
         {% endfor %}
       </div>
     </div>
     <div class="section group border-bottom-white padding-top-bottom padding-left hide-mobile">
       <div class="col span_8_of_12 padding-sides">
-        {% for post in site.categories.review2 %}
+        {% for post in site.categories.review-daniel %}
           {{ post.content }}
         {% endfor %}
       </div>
       <div class="col span_3_of_12">
-        <img class="img-round" src="/assets/review2.jpg">
+        <img class="img-round" src="/assets/review-daniel.jpg">
       </div>
     </div>
     <div class="section group padding-top-bottom">
       <div class="col span_3_of_12">
-        <img class="img-round img-margin-left" src="/assets/review3.jpg">
+        <img class="img-round img-margin-left" src="/assets/review-josie.jpg">
       </div>
       <div class="col span_8_of_12 padding-sides">
-        {% for post in site.categories.review3 %}
+        {% for post in site.categories.review-josie %}
           {{ post.content }}
         {% endfor %}
       </div>
@@ -137,7 +145,7 @@
   </div>
 
   <!-- environmentsl section -->
-    <div class="center-width background-secondary text-white section-spacer">
+    <div class="center-width background-secondary text-white padding-top-bottom-mobile section-spacer">
       <div class="section group">
         <div class="col span_3_of_12">
           <img class="img-percent" src="/assets/recycle.svg">
