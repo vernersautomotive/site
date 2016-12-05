@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 
 <!--header-->
@@ -52,7 +52,7 @@
 <main>
 
   <!--intro text section -->
-  <div class="center-width">
+  <div class="center-width section-spacer">
     <div class="section group">
       <div class="col span_2_of_12"></div>
       <div class="col span_8_of_12">
@@ -65,90 +65,99 @@
   </div>
 
   <!--reviews section -->
-  <div class="center-width background-primary text-white">
+  <div class="center-width text-primary section-spacer">
     <div class="section group">
-      <div class="col span_12_of_12">
-        <h4 class="margin-negative">Reviews</h4>
+      <div class="col span_12_of_12 no-margin-bottom">
+        <h4 class="no-margin-bottom line-height-point7">Reviews</h4>
       </div>
     </div>
-    <div class="section group">
+  </div>
+  <div class="center-width background-primary text-white">
+    <div class="section group border-bottom-white padding-top-bottom">
       <div class="col span_3_of_12">
-        <img class="img-100-round" src="/assets/review1.jpg">
+        <img class="img-round img-margin-left" src="/assets/review1.jpg">
       </div>
-      <div class="col span_8_of_12">
+      <div class="col span_8_of_12 padding-sides">
         {% for post in site.categories.review1 %}
           {{ post.content }}
         {% endfor %}
       </div>
-      <div class="col span_1_of_12"></div>
     </div>
-    <div class="section group">
+    <div class="section group border-bottom-white padding-top-bottom hide-desktop">
       <div class="col span_3_of_12">
-        <img class="img-100-round" src="/assets/review2.jpg">
+        <img class="img-round img-margin-left" src="/assets/review2.jpg">
       </div>
-      <div class="col span_8_of_12">
+      <div class="col span_8_of_12 padding-sides">
         {% for post in site.categories.review2 %}
           {{ post.content }}
         {% endfor %}
       </div>
-      <div class="col span_1_of_12"></div>
     </div>
-    <div class="section group">
-      <div class="col span_3_of_12">
-        <img class="img-100-round" src="/assets/review3.jpg">
+    <div class="section group border-bottom-white padding-top-bottom padding-left hide-mobile">
+      <div class="col span_8_of_12 padding-sides">
+        {% for post in site.categories.review2 %}
+          {{ post.content }}
+        {% endfor %}
       </div>
-      <div class="col span_8_of_12">
+      <div class="col span_3_of_12">
+        <img class="img-round" src="/assets/review2.jpg">
+      </div>
+    </div>
+    <div class="section group padding-top-bottom">
+      <div class="col span_3_of_12">
+        <img class="img-round img-margin-left" src="/assets/review3.jpg">
+      </div>
+      <div class="col span_8_of_12 padding-sides">
         {% for post in site.categories.review3 %}
           {{ post.content }}
         {% endfor %}
       </div>
-      <div class="col span_1_of_12"></div>
     </div>
   </div>
 
-  <!-- secondary text section -->
-  <div class="center-width">
+  <!-- team section -->
+  <div class="center-width section-spacer">
     <div class="section group">
       <div class="col span_2_of_12"></div>
       <div class="col span_8_of_12">
-        {% for post in site.categories.text2 %}
+        <img class="img-100-percent" src="/assets/staff.jpg">
+        <h4 class="margin-top-negative text-white">Team</h4>
+      </div>
+      <div class="col span_2_of_12"></div>
+    </div>
+    <div class="section group">
+      <div class="col span_2_of_12"></div>
+      <div class="col span_8_of_12">
+        {% for post in site.categories.team %}
           {{ post.content }}
         {% endfor %}
       </div>
       <div class="col span_2_of_12"></div>
     </div>
-    <div class="section group">
-      <div class="col span_3_of_12"></div>
-      <div class="col span_6_of_12">
-        <img class="img-100-percent" src="/assets/staff.jpg">
-      </div>
-      <div class="col span_3_of_12"></div>
-    </div>
   </div>
 
   <!-- environmentsl section -->
-    <div class="center-width background-secondary text-white">
+    <div class="center-width background-secondary text-white section-spacer">
       <div class="section group">
-        <div class="col span_2_of_12"></div>
-        <div class="col span_1_of_12">
-          <img class="img-100-percent" src="/assets/recycle.svg">
+        <div class="col span_3_of_12">
+          <img class="img-percent" src="/assets/recycle.svg">
         </div>
-        <div class="col span_7_of_12">
+        <div class="col span_8_of_12 margin-top-sm">
           {% for post in site.categories.environment %}
             {{ post.content }}
           {% endfor %}
         </div>
-        <div class="col span_1_of_12"></div>
       </div>
     </div>
 
   <!-- bio section -->
-  <div class="center-width"> 
+  <div class="center-width section-spacer"> 
     <div class="section group">
+      <div class="col span_1_of_12"></div>
       <div class="col span_4_of_12">
         <img class="img-100-percent" src="/assets/verner.jpg">
       </div>
-      <div class="col span_7_of_12">
+      <div class="col span_6_of_12">
         {% for post in site.categories.bio %}
           {{ post.content }}
         {% endfor %}
@@ -160,7 +169,7 @@
 
 <!-- footer -->
 <footer>
-  <div class="center-width"> 
+  <div class="center-width section-spacer background-primary text-white padding-bottom"> 
     <div class="section group">
       <div class="col span_2_of_12"></div>
       <div class="col span_8_of_12">
@@ -172,7 +181,5 @@
     </div>
   </div>
 </footer>
-
-
 
 </html>
