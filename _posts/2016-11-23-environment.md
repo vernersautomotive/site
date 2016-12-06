@@ -5,4 +5,4 @@ categories:
 - environment
 ---
 
-As long time caring residents of the Boulder community we are dedicated to environmentally responsible practices that seek to minimize waste and pollution in both the local and global spheres.
+As long time contributing members of the Boulder community we are dedicated to environmentally responsible practices that seek to minimize waste and pollution in both the local and global spheres.
