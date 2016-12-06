@@ -1,5 +1,5 @@
 ---
-title: Werner's Automotive Services - Audi & Volkswagen Specialist - Boulder Co 
+title: Werner's Automotive Services - Audi & Volkswagen Specialist - Boulder Co
 layout: home
 ---
 
